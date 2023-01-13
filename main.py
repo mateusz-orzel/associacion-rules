@@ -55,9 +55,9 @@ def Asocjacja(items: list, minSupp: float, minConf: float):
                     if x in y:
                         one += 1
 
-                print(rest,one)
+                #print(rest,one)
                 if one>0 and rest/one >= minConf:
-                    arules.append(f"{x} -> {tab} with confidence {rest/one}") 
+                    arules.append(f"{x} -> {tab} with confidence {rest/one:.2f}") 
 
             return [fsets,arules]
 
